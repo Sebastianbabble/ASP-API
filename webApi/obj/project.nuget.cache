@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "sh8IgGQ9EP2w4EQIDG59ZKh5fih8R9cwfZWSuT2JmqBlSK0n7cyaLewWEgXyG4TcPn4PKvWpdglzD+AD4IdJYA==",
+  "success": true,
+  "projectFilePath": "/Users/sebastianenciso/Projects/webApi/webApi/webApi.csproj",
+  "expectedPackageFiles": [
+    "/Users/sebastianenciso/.nuget/packages/mysqlconnector/2.1.6/mysqlconnector.2.1.6.nupkg.sha512",
+    "/Users/sebastianenciso/.nuget/packages/system.diagnostics.diagnosticsource/5.0.1/system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

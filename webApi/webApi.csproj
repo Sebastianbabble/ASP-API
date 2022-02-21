@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\css\" />
+    <Content Remove="wwwroot\js\" />
+    <Content Remove="wwwroot\components\" />
+    <Content Remove="wwwroot\components\Home\" />
+    <Content Remove="wwwroot\components\Sidebar\" />
+    <Content Remove="wwwroot\components\StudentInfo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Models\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\components\" />
+    <Folder Include="wwwroot\components\Home\" />
+    <Folder Include="wwwroot\components\Sidebar\" />
+    <Folder Include="wwwroot\components\StudentInfo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Controllers\" />
+    <None Remove="MySqlConnector" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="2.1.6" />
+  </ItemGroup>
+</Project>

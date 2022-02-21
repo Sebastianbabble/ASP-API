@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-col">
+            <table id="table-container">
+
+                <tr id="table-heading">
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Classes</th>
+                    <th>GPA</th>
+                    <th>Edit</th>
+                </tr>
+
+            </table>
+
+            <button class="createNewUser" onclick="javascript:sidebarCreateUser()">
+                Create New User
+            </button>
+        </div>
+        <div id="right-col">
+            <p class="newuser-header">Create New Student Form</p>
+            <form class="form-container" id="form-container" action="javascript:handleClick()">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="classes">Classes:</label>
+                <input type="text" id="classes" name="classes"><br>
+                <label for="classes">GPA:</label>
+                <input type="text" id="gpa" name="gpa"><br>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="right-right-col">
+            <p class="newuser-header">Update Student Form</p>
+            <form class="form-container" id="former-container" >
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="ffname" placeholder="dsa"><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="llname" placeholder="eatit"><br>
+                <label for="classes">Classes:</label>
+                <input type="text" id="classes" name="cclasses"><br>
+                <label for="classes">GPA:</label>
+                <input type="text" id="ggpa" name="ggpa"><br>
+            </form>
+            <button id="submitUpdate" >SUBMITUPDATE</button>
+
+        </div>
+
+    </div>
+    <link rel="stylesheet" href="./css/one.css" />
+    <script src="/js/one.js"></script>
+</body>
+</html>
