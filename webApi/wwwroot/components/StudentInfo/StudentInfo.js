@@ -6,27 +6,32 @@
         this.classes = document.querySelector('#classes');
         this.gpa = document.querySelector('#gpa');
         this.submit = document.getElementById("submit");
+        this.photo = document.getElementById("fileUpload").files[0];
         this.URI = "/studentInfo";
+        this.formData = new FormData();
 
+       
         
     }
 
     //1. POST API call to create new user//
-        createNewUser() {
+    createNewUser() {
 
-            const userNew = {
-                FirstName: this.firstName.value,
-                LastName: this.lastName.value,
-                Classes: this.classes.value,
-                GPA: this.gpa.value,
-            };
+        //const userNew = {
+        //    FirstName: this.firstName.value,
+        //    LastName: this.lastName.value,
+        //    Classes: this.classes.value,
+        //    GPA: this.gpa.value,
+        //};
+        this.formData.append("FirstName", this.firstName.value);
+        this.formData.append("LastName", this.lastName.value);
+        this.formData.append("Classes", this.classes.value);
+        this.formData.append("GPA", this.gpa.value);
+        this.formData.append("Photo", this.photo);
+
          fetch("/studentInfo", {
             method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(userNew)
+             body: this.formData
         })
              .then(() => {
                  this.firstName.value = '';
@@ -35,7 +40,11 @@
                  this.gpa.value = '';
              })
              .catch(error => console.error('Unable to add item.', error));
+
+        for (var pair of this.formData.entries()) {
+            console.log(`${pair[0]} ,  ${pair[1]}`);
         }
+    }
 
     //2. Displays user in a table
     displayUsers(data) {
@@ -129,17 +138,59 @@
 
     //6. Get a single user
     getSingleUser(id) {
-        console.log("inside single user");
         fetch(`${this.URI}/${id}`)
             .then(response => response.json())
             .then(data => this.displayUserValues(data))
             .catch(error => console.error("Could not get user.",error))
     }
+        
+    //7. Handle Image Upload
+
+    handleImageUpload(event) {
+        //const files = event.target.files;
+        this.photo = document.getElementById("fileUpload").files[0];
+        let base64String = "";
+        var reader = new FileReader();
+        console.log("next");
+
+        reader.onload = function () {
+            base64String = reader.result.replace("data:", "")
+                .replace(/^.+,/, "");
+
+            //imageBase64Stringsep = base64String;
+
+            //alert(imageBase64Stringsep);
+            console.log(base64String);
+        }
+        reader.readAsDataURL(this.photo);
+       
+
+
+
+
+    }
+
+    //8./
+    postImage() {
+        fetch(`${this.URI}`, {
+            method: 'POST',
+            body: this.formData
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.path)
+            })
+            .catch(error => {
+                console.error(error)
+            })
+    }
+    }
+
 
    
 
 
-    }
+    
 
 
 

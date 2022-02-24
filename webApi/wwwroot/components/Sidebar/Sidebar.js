@@ -3,7 +3,8 @@
 const handleClick = () => {
     const user = new StudentInfo();
 
-    //Check to see user values are empty
+    //Check to see user values are empty/
+
     if (user.firstName.value == "" ||
         user.lastName.value == "" ||
         user.classes.value == "" ||
@@ -14,6 +15,7 @@ const handleClick = () => {
     }
     else {
         user.createNewUser();
+        //user.postImage();
         sidebarClose();
 
         //user.getAllUsers();
@@ -28,6 +30,10 @@ const sidebarCreateUser = () => {
 
     let sidebar = document.getElementById("right-col");
     let otherSidebar = document.getElementById("right-right-col");
+
+    document.querySelector("#fileUpload").addEventListener("change", event => {
+        user.handleImageUpload(event);
+    })
 
     if (sidebar.style.width != "30%") {
         sidebar.style.width = "30%";

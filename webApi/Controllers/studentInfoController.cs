@@ -30,10 +30,12 @@ namespace webApi.Controllers
 
         //POST API
         [HttpPost]
-        public void Post([FromBody]studentInfo model)
+        public void Post([FromForm]studentInfo model)
         {
-            
-             model.CreateNewUser();           
+            //Convert.FromBase64String(model.Photo);
+            model.CreateNewUser();
+
+
         }
         [HttpPost("{id}")]
         public void updateStudent([FromBody] studentInfo model)

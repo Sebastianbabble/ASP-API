@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Http;
 using MySqlConnector;
 
 namespace webApi.Models
@@ -12,6 +13,7 @@ namespace webApi.Models
         public string LastName { get; set; }
         public string Classes { get; set; }
         public string GPA { get; set; }
+        public IFormFile Photo { get; set;}
         private MySqlConnection conn = null; 
 
         //1.Connection for DB
