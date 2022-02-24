@@ -17,12 +17,7 @@
     //1. POST API call to create new user//
     createNewUser() {
 
-        //const userNew = {
-        //    FirstName: this.firstName.value,
-        //    LastName: this.lastName.value,
-        //    Classes: this.classes.value,
-        //    GPA: this.gpa.value,
-        //};
+      
         this.formData.append("FirstName", this.firstName.value);
         this.formData.append("LastName", this.lastName.value);
         this.formData.append("Classes", this.classes.value);
