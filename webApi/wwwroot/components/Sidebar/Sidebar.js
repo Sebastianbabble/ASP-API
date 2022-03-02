@@ -35,8 +35,8 @@ const sidebarCreateUser = () => {
         user.handleImageUpload(event);
     })
 
-    if (sidebar.style.width != "30%") {
-        sidebar.style.width = "30%";
+    if (sidebar.style.width != "100%") {
+        sidebar.style.width = "100%";
         otherSidebar.style.width = "0%";
     }
     else
@@ -61,8 +61,8 @@ const sidebarEditUser = (id) => {
     //Get the user to be updated and display in placeholder
     user.getSingleUser(id);
 
-    if (sidebar.style.width != "30%") {
-        sidebar.style.width = "30%";
+    if (sidebar.style.width != "100%") {
+        sidebar.style.width = "100%";
         otherSidebar.style.width = "0%";
     }
     else

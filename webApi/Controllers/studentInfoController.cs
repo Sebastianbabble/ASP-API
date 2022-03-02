@@ -33,6 +33,8 @@ namespace webApi.Controllers
         public void Post([FromForm]studentInfo model)
         {
             //Convert.FromBase64String(model.Photo);
+
+
             model.CreateNewUser();
 
 
