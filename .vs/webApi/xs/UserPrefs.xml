@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{EB866002-B5BB-4837-9B5F-C71DE92164C6}|Default">
   <MonoDevelop.Ide.ItemProperties.webApi PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="webApi/wwwroot/components/StudentInfo/StudentInfo.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="webApi/Controllers/studentInfoController.cs">
     <Files>
-      <File FileName="webApi/wwwroot/index.html" Line="38" Column="1" />
-      <File FileName="webApi/wwwroot/components/Home/Home.css" Line="58" Column="30" />
+      <File FileName="webApi/wwwroot/index.html" Line="37" Column="58" />
+      <File FileName="webApi/wwwroot/components/Home/Home.css" Line="98" Column="1" />
       <File FileName="webApi/wwwroot/components/Home/Home.js" Line="1" Column="1" />
-      <File FileName="webApi/wwwroot/components/Sidebar/Sidebar.js" Line="65" Column="34" />
+      <File FileName="webApi/wwwroot/components/Sidebar/Sidebar.js" Line="73" Column="16" />
       <File FileName="webApi/wwwroot/components/StudentInfo/StudentInfo.js" Line="1" Column="1" />
+      <File FileName="webApi/Controllers/studentInfoController.cs" Line="34" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,15 +15,15 @@
           <Node name="webApi" expanded="True">
             <Node name="webApi" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="studentInfoController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="components" expanded="True">
                   <Node name="Home" expanded="True" />
                   <Node name="Sidebar" expanded="True" />
-                  <Node name="StudentInfo" expanded="True">
-                    <Node name="StudentInfo.js" selected="True" />
-                  </Node>
+                  <Node name="StudentInfo" expanded="True" />
                 </Node>
                 <Node name="css" expanded="True" />
               </Node>

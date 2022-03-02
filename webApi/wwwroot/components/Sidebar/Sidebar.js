@@ -23,6 +23,27 @@ const handleClick = () => {
     }
      
 }
+//const handleUpdate = () => {
+//    const user = new StudentInfo();
+//    if (user.firstName.value == "" ||
+//        user.lastName.value == "" ||
+//        user.classes.value == "" ||
+//        user.gpa.value == "") {
+//        alert("You forgot some input values. Try again");
+//        return false;
+
+//    }
+//    else {
+//        user.updateUser();
+//        user.createNewUser();
+//        //user.postImage();
+//        sidebarClose();
+
+//        //user.getAllUsers();
+//        return true;
+//    }
+
+//}
 
 //2. Create user sidebar
 const sidebarCreateUser = () => {
@@ -36,11 +57,14 @@ const sidebarCreateUser = () => {
     })
 
     if (sidebar.style.width != "100%") {
+        sidebar.style.border = "4px solid white";
         sidebar.style.width = "100%";
         otherSidebar.style.width = "0%";
     }
-    else
+    else {
+        sidebar.style.border = "0";
         sidebarClose();
+    }
 
 
 }
@@ -54,7 +78,7 @@ const sidebarEditUser = (id) => {
     let otherSidebar = document.getElementById("right-col");
     let ID = document.getElementById(id);
     let btn = document.getElementById("submitUpdate");
-
+    console.log("inside");
     //Add listner to submit btn to update user
     btn.addEventListener('click', function () { user.updateUser(id) });
 
@@ -63,10 +87,14 @@ const sidebarEditUser = (id) => {
 
     if (sidebar.style.width != "100%") {
         sidebar.style.width = "100%";
+        sidebar.style.border = "4px solid white";
         otherSidebar.style.width = "0%";
     }
-    else
+    else {
+        sidebar.style.border = "0";
         otherSidebarClose();
+
+    }
 
 
 }
