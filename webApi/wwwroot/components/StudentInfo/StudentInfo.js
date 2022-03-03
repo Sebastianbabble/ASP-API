@@ -10,14 +10,10 @@
         this.URI = "/studentInfo";
         this.formData = new FormData();
 
-       
-        
     }
 
-    //1. POST API call to create new user//
+    //1. POST API call to create new user
     createNewUser() {
-
-      
         this.formData.append("FirstName", this.firstName.value);
         this.formData.append("LastName", this.lastName.value);
         this.formData.append("Classes", this.classes.value);
@@ -45,18 +41,25 @@
     displayUsers(data) {
         let tBody = document.getElementById('table-container');
         
-           
+        console.log("hey");
      
         data.forEach(item => {
 
             let tr = tBody.insertRow(-1);
-            let First = tr.insertCell(0);
-            let Last = tr.insertCell(1);
-            let Class = tr.insertCell(2);
-            let G = tr.insertCell(3);
-            let B = tr.insertCell(4);
+            let Photo = tr.insertCell(0)
+            let First = tr.insertCell(1);
+            let Last = tr.insertCell(2);
+            let Class = tr.insertCell(3);
+            let G = tr.insertCell(4);
+            let B = tr.insertCell(5);
 
             console.log(item);
+            let p = document.createElement('img');
+            p.innerHtml = "<div>UOOO</div>";
+            p.src = "/Users";
+            p.src = p.src.substring(22);
+            console.log(p.src);
+            Photo.appendChild(p);
 
             let f = document.createTextNode(item.firstName);
             First.appendChild(f);
@@ -127,8 +130,6 @@
         })
             .catch(error => console.error('Unable to update student.', error));
 
-
-           
     }
 
     //6. Get a single user
@@ -152,17 +153,11 @@
             base64String = reader.result.replace("data:", "")
                 .replace(/^.+,/, "");
 
-            //imageBase64Stringsep = base64String;
-
-            //alert(imageBase64Stringsep);
+          
             console.log(base64String);
         }
         reader.readAsDataURL(this.photo);
-       
-
-
-
-
+      
     }
 
     //8./

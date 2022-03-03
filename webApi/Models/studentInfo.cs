@@ -13,6 +13,7 @@ namespace webApi.Models
         public string LastName { get; set; }
         public string Classes { get; set; }
         public string GPA { get; set; }
+        public string PhotoUrl { get; set; }
         public IFormFile Photo { get; set;}
         private MySqlConnection conn = null; 
 
@@ -34,14 +35,16 @@ namespace webApi.Models
             using (var reader = command.ExecuteReader())
                 while (reader.Read())
                 {
-                    student.Add(new studentInfo() {
+                    student.Add(new studentInfo()
+                    {
                         FirstName = (string)reader["FirstName"],
                         LastName = (string)reader["LastName"],
                         Classes = (string)reader["Classes"],
                         GPA = (string)reader["GPA"],
-                        Id = (int)reader["PersonID"]
+                        Id = (int)reader["PersonID"],
+                        PhotoUrl = (string)reader["photo"]
 
-                    });
+                    }); ;
 
 
                 }
@@ -87,11 +90,12 @@ namespace webApi.Models
             using (var cmd = new MySqlCommand())
             {
                 cmd.Connection = conn;
-                cmd.CommandText = "INSERT INTO Students (FirstName,LastName,Classes,GPA) VALUES (@f,@l,@c,@g);";
+                cmd.CommandText = "INSERT INTO Students (FirstName,LastName,Classes,GPA,Photo) VALUES (@f,@l,@c,@g,@p);";
                 cmd.Parameters.AddWithValue("f", this.FirstName);
                 cmd.Parameters.AddWithValue("l", this.LastName);
                 cmd.Parameters.AddWithValue("c", this.Classes);
                 cmd.Parameters.AddWithValue("g", this.GPA);
+                cmd.Parameters.AddWithValue("p", this.Photo.FileName);
                 await cmd.ExecuteNonQueryAsync();
             }
             conn.Close();
