@@ -8,16 +8,16 @@
     <div class="main-container">
         <div class="left-col">
             <form class="searchbar">
-                    <input type="text" size="30" id="search" placeholder="Search" onkeyup="handleSearch();"/>
+                <input type="text" size="30" id="search" placeholder="Search" onkeyup="handleSearch();" />
             </form>
             <table id="table-container">
 
                 <tr id="table-heading">
                     <th>Photo</th>
-                    <th onclick="sortTable(1)">First Name</th>
-                    <th onclick="sortTable(2)">Last Name</th>
-                    <th onclick="sortTable(3)">Classes</th>
-                    <th onclick="sortTable(4)">GPA</th>
+                    <th onclick="sortTable(1)"><div id="header-data">First Name<i id="arrow-icon" class="fa fa-arrows-v"></i></div></th>
+                    <th onclick="sortTable(2)"><div id="header-data">Last Name<i id ="arrow-icon" class="fa fa-arrows-v" ></i></div></th>
+                    <th onclick="sortTable(3)"><div id="header-data">Classes<i id="arrow-icon" class="fa fa-arrows-v"></i></div></th>
+                    <th onclick="sortTable(4)"><div id="header-data">GPA<i id="arrow-icon" class="fa fa-arrows-v"></i></div></th>
                     <th>Edit/Delete</th>
                 </tr>
             </table>
@@ -45,7 +45,7 @@
         </div>
         <div id="right-right-col">
             <p class="newuser-header">Update Student Form</p>
-            <form class="form-container" id="former-container" >
+            <form class="form-container" id="former-container">
                 <label for="fname">First name:</label>
                 <input type="text" id="fname" name="ffname" placeholder="dsa"><br>
                 <label for="lname">Last name:</label>
@@ -55,11 +55,12 @@
                 <label for="classes">GPA:</label>
                 <input type="text" id="ggpa" name="ggpa"><br>
             </form>
-            <button id="submitUpdate" >Update</button>
+            <button id="submitUpdate">Update</button>
 
         </div>
 
     </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/one.css" />
     <script src="/js/one.js"></script>
 </body>

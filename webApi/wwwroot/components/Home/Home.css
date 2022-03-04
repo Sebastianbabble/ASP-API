@@ -78,12 +78,17 @@ input[type='file']::file-selector-button {
     background-color: #EDC7B7;
     border: 2px solid white;
 }
+
 td, th {
     text-align: left;
     padding: 15px;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     font-size: 1.1em;
     
+}
+#header-data{
+    display: flex;
+    justify-content:space-between;
 }
 
 td:last-child{
@@ -129,6 +134,9 @@ th:last-child{
     color: white;
     border-radius: 25px;
     border: 2px solid white;
+}
+#arrow-icon{
+    font-size: 20px;  
 }
 .delete {
     height: 30px;
