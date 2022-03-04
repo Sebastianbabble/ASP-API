@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{EB866002-B5BB-4837-9B5F-C71DE92164C6}|Default">
   <MonoDevelop.Ide.ItemProperties.webApi PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="webApi/Controllers/studentInfoController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="webApi/wwwroot/components/StudentInfo/StudentInfo.js">
     <Files>
-      <File FileName="webApi/wwwroot/components/Home/Home.js" Line="14" Column="33" />
-      <File FileName="webApi/wwwroot/index.html" Line="15" Column="40" />
-      <File FileName="webApi/wwwroot/components/Home/Home.css" Line="15" Column="30" />
-      <File FileName="webApi/Controllers/studentInfoController.cs" Line="34" Column="1" />
+      <File FileName="webApi/wwwroot/components/Home/Home.js" Line="7" Column="4" />
+      <File FileName="webApi/wwwroot/index.html" Line="14" Column="1" />
+      <File FileName="webApi/wwwroot/components/Home/Home.css" Line="137" Column="30" />
+      <File FileName="webApi/Controllers/studentInfoController.cs" Line="17" Column="10" />
+      <File FileName="webApi/Models/studentInfo.cs" Line="98" Column="1" />
+      <File FileName="webApi/wwwroot/components/StudentInfo/StudentInfo.js" Line="75" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,15 +15,15 @@
           <Node name="webApi" expanded="True">
             <Node name="webApi" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="studentInfoController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="components" expanded="True">
                   <Node name="Home" expanded="True" />
                   <Node name="Sidebar" expanded="True" />
-                  <Node name="StudentInfo" expanded="True" />
+                  <Node name="StudentInfo" expanded="True">
+                    <Node name="StudentInfo.js" selected="True" />
+                  </Node>
                 </Node>
                 <Node name="css" expanded="True" />
               </Node>
@@ -37,9 +39,7 @@
     <String>/Users/sebastianenciso/Library/Caches/VisualStudio/8.0/Symbols/mysql-net/MySqlConnector/78051fb3905eac2ee24d55ca4509652041d38add</String>
   </Debugger.DebugSourceFolders>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/sebastianenciso/Projects/webApi/webApi/Controllers/studentInfoController.cs" relfile="webApi/Controllers/studentInfoController.cs" line="34" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

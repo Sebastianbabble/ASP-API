@@ -32,11 +32,8 @@ namespace webApi.Controllers
         [HttpPost]
         public void Post([FromForm]studentInfo model)
         {
-            //Convert.FromBase64String(model.Photo);
-
 
             model.CreateNewUser();
-
 
         }
         [HttpPost("{id}")]

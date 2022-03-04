@@ -74,11 +74,18 @@
             G.appendChild(g);
 
             let b = document.createElement("button");
+            let d = document.createElement("button");
             b.id = item.id;
-            b.className = "edit";
+            d.id = item.id;
+            d.className = "edit";
+            d.textContent = "Delete";
+            b.className = "delete";
             b.textContent = "Edit";
             b.onclick = () => { sidebarEditUser(b.id) };
+            d.onclick = () => { deleteUser(d.id) };
+
             B.appendChild(b);
+            B.appendChild(d);
             
 
         })
