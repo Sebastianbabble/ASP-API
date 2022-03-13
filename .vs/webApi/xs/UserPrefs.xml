@@ -1,13 +1,11 @@
 ﻿<Properties StartupConfiguration="{EB866002-B5BB-4837-9B5F-C71DE92164C6}|Default">
   <MonoDevelop.Ide.ItemProperties.webApi PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="webApi/wwwroot/components/StudentInfo/StudentInfo.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="webApi/Models/studentInfo.cs">
     <Files>
-      <File FileName="webApi/wwwroot/components/Home/Home.js" Line="7" Column="4" />
-      <File FileName="webApi/wwwroot/index.html" Line="14" Column="1" />
-      <File FileName="webApi/wwwroot/components/Home/Home.css" Line="137" Column="30" />
-      <File FileName="webApi/Controllers/studentInfoController.cs" Line="17" Column="10" />
-      <File FileName="webApi/Models/studentInfo.cs" Line="98" Column="1" />
-      <File FileName="webApi/wwwroot/components/StudentInfo/StudentInfo.js" Line="75" Column="1" />
+      <File FileName="webApi/wwwroot/components/StudentInfo/StudentInfo.js" Line="95" Column="4" />
+      <File FileName="webApi/wwwroot/components/Sidebar/Sidebar.js" Line="34" Column="1" />
+      <File FileName="webApi/Controllers/studentInfoController.cs" Line="1" Column="1" />
+      <File FileName="webApi/Models/studentInfo.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,14 +14,14 @@
             <Node name="webApi" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="studentInfo.cs" selected="True" />
+              </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="components" expanded="True">
                   <Node name="Home" expanded="True" />
                   <Node name="Sidebar" expanded="True" />
-                  <Node name="StudentInfo" expanded="True">
-                    <Node name="StudentInfo.js" selected="True" />
-                  </Node>
+                  <Node name="StudentInfo" expanded="True" />
                 </Node>
                 <Node name="css" expanded="True" />
               </Node>

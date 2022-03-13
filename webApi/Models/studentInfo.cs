@@ -126,6 +126,16 @@ namespace webApi.Models
 
         }
 
+        async public void DeleteUser()
+        {
+            conn.Open();
+
+            using (var cmd = new MySqlCommand())
+            {
+
+            }
+        }
+
 
 
     }

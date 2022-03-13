@@ -30,7 +30,7 @@ const handleSearch = () => {
     console.log(search);
 };
 const deleteUser = (id) => {
-    console.log("deleted user");
+    const user = new StudentInfo();
 }
 
 

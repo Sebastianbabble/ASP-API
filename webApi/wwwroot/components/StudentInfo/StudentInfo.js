@@ -44,7 +44,7 @@
         console.log("hey");
      
         data.forEach(item => {
-
+           
             let tr = tBody.insertRow(-1);
             let Photo = tr.insertCell(0)
             let First = tr.insertCell(1);
@@ -92,8 +92,7 @@
 
     }
 
-  
-
+   
     //3.GET API call to get all users//
     getAllUsers() {
         let uri = "/studentInfo"
