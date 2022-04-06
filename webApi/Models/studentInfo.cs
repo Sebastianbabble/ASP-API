@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using Microsoft.AspNetCore.Http;
 using MySqlConnector;
 
@@ -80,13 +81,30 @@ namespace webApi.Models
             return student;
         }
 
+        //3. Store Photo to file
+        public void storePhotoFile()
+        {
+            //1. Create file path to photo
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Files");
 
+            //FileInfo fileinfo = new FileInfo(this.Photo.FileName);
 
-        //3.Create a new User
+            //2. Combine path with Filename
+            string fileNameWithPath = Path.Combine(path, this.Photo.FileName);
+
+            //3. Create a file with pathname and copy the photo to it.
+            using (var stream = new FileStream(fileNameWithPath, FileMode.Create))
+            {
+                this.Photo.CopyTo(stream);
+            }
+
+        }
+        //4.Create a new User
         async public void CreateNewUser()
         {
              conn.Open();
 
+            //1. Create SQL query for user
             using (var cmd = new MySqlCommand())
             {
                 cmd.Connection = conn;
@@ -98,13 +116,18 @@ namespace webApi.Models
                 cmd.Parameters.AddWithValue("p", this.Photo.FileName);
                 await cmd.ExecuteNonQueryAsync();
             }
+
+            //2. Store photo file on server
+            storePhotoFile();
+
+
             conn.Close();
 
 
 
         }
 
-        //4.Update User
+        //5.Update User
         async public void UpdateUser()
         {
             conn.Open();

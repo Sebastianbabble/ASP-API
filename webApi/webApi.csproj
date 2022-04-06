@@ -12,6 +12,7 @@
     <Content Remove="wwwroot\components\Home\" />
     <Content Remove="wwwroot\components\Sidebar\" />
     <Content Remove="wwwroot\components\StudentInfo\" />
+    <Content Remove="wwwroot\Files\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\" />
@@ -23,6 +24,7 @@
     <Folder Include="wwwroot\components\Home\" />
     <Folder Include="wwwroot\components\Sidebar\" />
     <Folder Include="wwwroot\components\StudentInfo\" />
+    <Folder Include="wwwroot\Files\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />

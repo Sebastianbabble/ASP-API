@@ -53,12 +53,14 @@
             let G = tr.insertCell(4);
             let B = tr.insertCell(5);
 
-            console.log(item);
+            console.log(item.photoUrl);
             let p = document.createElement('img');
-            p.innerHtml = "<div>UOOO</div>";
-            p.src = "/Users";
+            //p.innerHtml = "<div>UOOO</div>";
+            p.src = `Files/${item.photoUrl}`;
             p.src = p.src.substring(22);
-            console.log(p.src);
+            p.height = "40";
+            p.width = "40";
+            p.className = "profilePhoto";
             Photo.appendChild(p);
 
             let f = document.createTextNode(item.firstName);
@@ -152,6 +154,7 @@
         //const files = event.target.files;
         this.photo = document.getElementById("fileUpload").files[0];
         let base64String = "";
+
         var reader = new FileReader();
         console.log("next");
 
