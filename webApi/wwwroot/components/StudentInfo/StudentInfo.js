@@ -46,6 +46,7 @@
         data.forEach(item => {
            
             let tr = tBody.insertRow(-1);
+            tr.id = item.id;
             let Photo = tr.insertCell(0)
             let First = tr.insertCell(1);
             let Last = tr.insertCell(2);
@@ -84,7 +85,7 @@
             b.className = "delete";
             b.textContent = "Edit";
             b.onclick = () => { sidebarEditUser(b.id) };
-            d.onclick = () => { deleteUser(d.id) };
+            d.onclick = () => { this.deleteUser(d.id) };
 
             B.appendChild(b);
             B.appendChild(d);
@@ -154,6 +155,7 @@
         //const files = event.target.files;
         this.photo = document.getElementById("fileUpload").files[0];
         let base64String = "";
+        
 
         var reader = new FileReader();
         console.log("next");
@@ -183,6 +185,19 @@
                 console.error(error)
             })
     }
+
+    //9. Delete User
+
+    deleteUser(id) {
+        fetch(`${this.URI}/${id}`, {
+            method: 'DELETE'
+            
+        })
+            .then(() => { document.getElementById(id).remove() })
+            .catch(error => console.error('Unable to delete', error));
+        console.log(`User ${id} been deleted `);
+    }
+
     }
 
 

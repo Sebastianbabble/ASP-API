@@ -29,9 +29,10 @@ const handleSearch = () => {
     console.log(lowerSearch);
     console.log(search);
 };
-const deleteUser = (id) => {
-    const user = new StudentInfo();
-}
+//const deleteUser = (id) => {
+//    const user = new StudentInfo();
+//    console.log("deleted User")
+// }
 
 
 //3. Function to sort the table brought to you by w3schools

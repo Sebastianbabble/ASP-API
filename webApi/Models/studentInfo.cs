@@ -149,14 +149,18 @@ namespace webApi.Models
 
         }
 
-        async public void DeleteUser()
+        async public void DeleteUser(long id)
         {
             conn.Open();
 
             using (var cmd = new MySqlCommand())
             {
-
+                cmd.Connection = conn;
+                cmd.CommandText = "DELETE FROM Students WHERE PersonID = @id;";
+                cmd.Parameters.AddWithValue("id", id);
+                await cmd.ExecuteNonQueryAsync();
             }
+            conn.Close();
         }
 
 

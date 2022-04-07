@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{EB866002-B5BB-4837-9B5F-C71DE92164C6}|Default">
   <MonoDevelop.Ide.ItemProperties.webApi PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="webApi/wwwroot/components/Home/Home.css">
+  <MonoDevelop.Ide.Workbench ActiveDocument="webApi/wwwroot/components/StudentInfo/StudentInfo.js">
     <Files>
-      <File FileName="webApi/Models/studentInfo.cs" Line="126" Column="1" />
-      <File FileName="webApi/Controllers/studentInfoController.cs" Line="1" Column="1" />
-      <File FileName="webApi/wwwroot/components/StudentInfo/StudentInfo.js" Line="63" Column="38" />
-      <File FileName="webApi/wwwroot/index.html" Line="45" Column="15" />
-      <File FileName="webApi/wwwroot/components/Home/Home.css" Line="1" Column="1" />
+      <File FileName="webApi/Models/studentInfo.cs" Line="164" Column="1" />
+      <File FileName="webApi/Controllers/studentInfoController.cs" Line="48" Column="1" />
+      <File FileName="webApi/wwwroot/components/StudentInfo/StudentInfo.js" Line="196" Column="53" />
+      <File FileName="webApi/wwwroot/components/Home/Home.js" Line="27" Column="10" />
+      <File FileName="webApi/wwwroot/index.html" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,10 +17,11 @@
               <Node name="Models" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="components" expanded="True">
-                  <Node name="Home" expanded="True">
-                    <Node name="Home.css" selected="True" />
+                  <Node name="Home" expanded="True" />
+                  <Node name="Sidebar" expanded="True" />
+                  <Node name="StudentInfo" expanded="True">
+                    <Node name="StudentInfo.js" selected="True" />
                   </Node>
-                  <Node name="StudentInfo" expanded="True" />
                 </Node>
               </Node>
             </Node>
@@ -37,6 +38,8 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/sebastianenciso/Projects/webApi/webApi/Models/studentInfo.cs" relfile="webApi/Models/studentInfo.cs" line="121" column="1" />
+      <Breakpoint file="/Users/sebastianenciso/Projects/webApi/webApi/Controllers/studentInfoController.cs" relfile="webApi/Controllers/studentInfoController.cs" line="48" column="1" />
+      <Breakpoint file="/Users/sebastianenciso/Projects/webApi/webApi/Models/studentInfo.cs" relfile="webApi/Models/studentInfo.cs" line="153" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

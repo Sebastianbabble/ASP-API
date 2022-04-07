@@ -42,9 +42,10 @@ namespace webApi.Controllers
              model.UpdateUser();
         }
         [HttpDelete("{id}")]
-        public void deleteStudent([FromBody] studentInfo model)
+        public void deleteStudent(long id)
         {
-            model.DeleteUser();
+            studentInfo me = new studentInfo();
+            me.DeleteUser(id);
         }
 
       
