@@ -1,5 +1,8 @@
 ﻿
-//1.Loads table on page load
+//5.Event listeners
+
+
+// 1.Loads table on page load
 window.addEventListener('DOMContentLoaded', (event) => {
     const user = new StudentInfo();
     user.getAllUsers();
@@ -29,10 +32,6 @@ const handleSearch = () => {
     console.log(lowerSearch);
     console.log(search);
 };
-//const deleteUser = (id) => {
-//    const user = new StudentInfo();
-//    console.log("deleted User")
-// }
 
 
 //3. Function to sort the table brought to you by w3schools
@@ -90,6 +89,14 @@ const sortTable = (n) => {
         }
     }
 }
+
+//4.handle upload
+const handleVideoUpload = (event) => {
+    let file = document.getElementById("video-upload").files[0];
+    console.log("UP Up pu PU load");
+}
+
+
 
 
 

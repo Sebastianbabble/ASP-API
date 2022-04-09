@@ -3,6 +3,7 @@
     margin:0;
     padding: 0;
 }
+
 .main-container {
     display: grid;
     height: 100vh;

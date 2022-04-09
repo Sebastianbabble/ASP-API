@@ -13,7 +13,8 @@
                 files: {
                     '/Users/sebastianenciso/Projects/webApi/webApi/wwwroot/css/one.css': [
                         '/Users/sebastianenciso/Projects/webApi/webApi/wwwroot/components/Sidebar/Sidebar.css',
-                        '/Users/sebastianenciso/Projects/webApi/webApi/wwwroot/components/Home/Home.css'
+                        '/Users/sebastianenciso/Projects/webApi/webApi/wwwroot/components/Home/Home.css',
+                        '/Users/sebastianenciso/Projects/webApi/webApi/wwwroot/components/Video/Video.css'
 
 
                     ]
@@ -29,7 +30,9 @@
                     '/Users/sebastianenciso/Projects/webApi/webApi/wwwroot/js/one.js': [
                         '/Users/sebastianenciso/Projects/webApi/webApi/wwwroot/components/StudentInfo/StudentInfo.js',
                         '/Users/sebastianenciso/Projects/webApi/webApi/wwwroot/components/Sidebar/Sidebar.js',
-                        '/Users/sebastianenciso/Projects/webApi/webApi/wwwroot/components/Home/Home.js'
+                        '/Users/sebastianenciso/Projects/webApi/webApi/wwwroot/components/Home/Home.js',
+                        '/Users/sebastianenciso/Projects/webApi/webApi/wwwroot/components/Video/Video.js'
+
 
 
                     ],
