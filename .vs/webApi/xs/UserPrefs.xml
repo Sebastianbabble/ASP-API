@@ -1,13 +1,11 @@
 ﻿<Properties StartupConfiguration="{EB866002-B5BB-4837-9B5F-C71DE92164C6}|Default">
   <MonoDevelop.Ide.ItemProperties.webApi PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="webApi/wwwroot/components/Video/Video.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="webApi/Models/studentInfo.cs">
     <Files>
-      <File FileName="webApi/wwwroot/components/Home/Home.js" Line="10" Column="4" />
-      <File FileName="webApi/wwwroot/components/Video/Video.js" Line="1" Column="23" />
-      <File FileName="webApi/wwwroot/components/Video/Video.css" Line="8" Column="1" />
-      <File FileName="webApi/wwwroot/components/Home/Home.css" Line="6" Column="1" />
-      <File FileName="webApi/wwwroot/Home.html" Line="7" Column="33" />
-      <File FileName="webApi/wwwroot/components/Sidebar/Sidebar.js" Line="53" Column="19" />
+      <File FileName="webApi/Controllers/studentInfoController.cs" Line="1" Column="1" />
+      <File FileName="webApi/Controllers/videoUploadController.cs" Line="18" Column="1" />
+      <File FileName="webApi/Models/videoUpload.cs" Line="7" Column="10" />
+      <File FileName="webApi/Models/studentInfo.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,15 +13,15 @@
           <Node name="webApi" expanded="True">
             <Node name="webApi" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="studentInfo.cs" selected="True" />
+              </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="components" expanded="True">
                   <Node name="Home" expanded="True" />
                   <Node name="Sidebar" expanded="True" />
                   <Node name="StudentInfo" expanded="True" />
-                  <Node name="Video" expanded="True">
-                    <Node name="Video.js" selected="True" />
-                  </Node>
+                  <Node name="Video" expanded="True" />
                 </Node>
               </Node>
             </Node>

@@ -34,8 +34,10 @@
     <None Remove="Models\" />
     <None Remove="Controllers\" />
     <None Remove="MySqlConnector" />
+    <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MySqlConnector" Version="2.1.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
   </ItemGroup>
 </Project>
