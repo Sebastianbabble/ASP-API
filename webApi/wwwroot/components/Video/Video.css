@@ -17,4 +17,20 @@
     justify-content: center;
     border: 2px solid black;
 }
-   
+
+progress::-webkit-progress-bar{
+/*    border-radius: 25%;
+    border: 1px solid black;*/
+    background-color: white;
+    border-radius: 25px;
+  
+
+}
+progress::-webkit-progress-value{
+    background-color: lightblue;
+    border-radius: 25px;
+}
+progress{
+    border: 2px solid black;
+    border-radius: 25px;
+}

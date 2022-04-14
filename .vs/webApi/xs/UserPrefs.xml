@@ -1,21 +1,23 @@
 ﻿<Properties StartupConfiguration="{EB866002-B5BB-4837-9B5F-C71DE92164C6}|Default">
   <MonoDevelop.Ide.ItemProperties.webApi PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="webApi/Models/studentInfo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="webApi/Controllers/videoUploadController.cs">
     <Files>
-      <File FileName="webApi/Controllers/studentInfoController.cs" Line="1" Column="1" />
-      <File FileName="webApi/Controllers/videoUploadController.cs" Line="18" Column="1" />
-      <File FileName="webApi/Models/videoUpload.cs" Line="7" Column="10" />
-      <File FileName="webApi/Models/studentInfo.cs" Line="1" Column="1" />
+      <File FileName="webApi/wwwroot/components/Video/Video.js" Line="22" Column="50" IsPinned="True" />
+      <File FileName="webApi/wwwroot/components/StudentInfo/StudentInfo.js" Line="1" Column="1" />
+      <File FileName="webApi/wwwroot/Home.html" Line="14" Column="81" />
+      <File FileName="webApi/wwwroot/components/Video/Video.css" Line="27" Column="1" />
+      <File FileName="webApi/Models/studentInfo.cs" Line="7" Column="24" />
+      <File FileName="webApi/Controllers/videoUploadController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="webApi" expanded="True">
             <Node name="webApi" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="studentInfo.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="videoUploadController.cs" selected="True" />
               </Node>
+              <Node name="Models" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="components" expanded="True">
                   <Node name="Home" expanded="True" />
