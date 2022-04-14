@@ -18,34 +18,24 @@ const uploadVideo  = async () => {
     let formData = new FormData();
     formData.append("files1", file);
     
-    fetch("/videoUpload")
-        .then(response => response.text())
-        .then(data => console.log(data));
-        
+    //3.Handle upload 
+    let getR = new XMLHttpRequest();
+    getR.open("GET", "/videoUpload");
 
+    //1. onload is same as load and is called after load has been upgraded
+    getR.onload = () => {
+        console.log(getR.responseText); 
+    }
+
+    //2.Handle the progress of the upload
+    getR.addEventListener('progress', event => {
+        console.log('Progress updating');
+    })
+    getR.send();
+   
     
-    //ajax.upload.addEventListener("progress", progressHandler(event), false);
 }
-const makeRequest = (method, url) => {
-    console.log("inside make request");
-    return new Promise(function (resolve, reject) {
-        let ajax = new XMLHttpRequest();
-        ajax.open("GET", "/videoUpload");
 
-        ajax.onerror = function () {
-            reject({
-                status: "du",
-                statusText: ajax.statusText
-            });
-        };
-
-        ajax.ontimeout = function () {
-            console.error("the reqyest timed out");
-        };
-        ajax.send(null);
-    });
-        
-}
 
 const progressHandler = (event) => {
     console.log(event.loaded);
