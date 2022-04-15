@@ -15,6 +15,7 @@
     <Content Remove="wwwroot\Files\" />
     <Content Remove="wwwroot\pages\" />
     <Content Remove="wwwroot\components\Video\" />
+    <Content Remove="wwwroot\Files\Video\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\" />
@@ -29,6 +30,7 @@
     <Folder Include="wwwroot\Files\" />
     <Folder Include="wwwroot\pages\" />
     <Folder Include="wwwroot\components\Video\" />
+    <Folder Include="wwwroot\Files\Video\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />

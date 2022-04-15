@@ -20,9 +20,10 @@ namespace webApi.Controllers
            
         }
         [HttpPost]
-        public void Post()
+        public void Post([FromForm] videoUpload model )
         {
             videoUpload me = new videoUpload();
+            me.updateVideo();
         }
     }
 }

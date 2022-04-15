@@ -8,12 +8,13 @@
     <div class="home-container">
         <div class="formTitle">
             <h3 id="heyou">Upload Video File</h3>
-            <form id="form-container">
+            <form id="form-container" action="javascript:handleVideoUpload()">
                 <input type="file" id="video-upload" />
                 <progress class="progress" id="progressBar" value="0" max="100">5%</progress>
-                <input type="button" value="Upload Video" onclick="uploadVideo()" />
-            </form>
-        </div>
+               <input id="submit" type="submit" value="Upload Video">
+
+    </form>
+</div>
     </div>
     <link rel="stylesheet" href="./css/one.css" />
     <script src="/js/one.js"></script>

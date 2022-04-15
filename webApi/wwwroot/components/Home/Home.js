@@ -90,11 +90,11 @@ const sortTable = (n) => {
     }
 }
 
-//4.handle upload
-const handleVideoUpload = (event) => {
-    let file = document.getElementById("video-upload").files[0];
-    console.log("UP Up pu PU load");
-}
+////4.handle upload
+//const handleVideoUpload = (event) => {
+//    let file = document.getElementById("video-upload").files[0];
+//    console.log("UP Up pu PU load");
+//}
 
 
 
