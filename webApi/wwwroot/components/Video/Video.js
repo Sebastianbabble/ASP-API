@@ -5,7 +5,6 @@
 const handleVideoUpload = () => {
     const user = new VideoUpload();
     user.postVideo();
-
     console.log(user);
 }
 
@@ -14,7 +13,6 @@ class VideoUpload {
         this.video = document.getElementById("video-upload").files[0];
         this.URI = "/videoUpload";
         this.formData = new FormData();
-        this.bar = document.querySelector("#progressBar");
 
     }
 
@@ -30,14 +28,13 @@ class VideoUpload {
 
     //2. API POST call
     postVideo() {
-
         let postRequest = new XMLHttpRequest();
         this.uploadVideo();
-        //2. Progess of upload  
-        postRequest.upload.onprogess = (event) => {
-            let percent = (event.loaded / event.total) * 100;
-            console.log(`percent = ${percent}`);
-        }
+
+
+        //2. Progess of upload
+
+        postRequest.upload.addEventListener("progress", this.progressHandler, false);
 
         //3. Succesfull upload
         postRequest.upload.onload = (event) => {
@@ -48,5 +45,21 @@ class VideoUpload {
 
         postRequest.open("POST", this.URI);
         postRequest.send(this.formData);
+    }
+
+    progressHandler() {
+
+        console.log("Inside progress handler");
+        let progressBar = document.querySelector("#progressBar");
+        let status = document.querySelector("#status");
+        let percent = (event.loaded / event.total) * 100;
+
+
+        progressBar.value = Math.round(percent);
+        status.innerHTML = Math.round(percent) + "% uploaded ... please wait";
+
+       
+
+
     }
 }

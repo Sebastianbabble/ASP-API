@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{EB866002-B5BB-4837-9B5F-C71DE92164C6}|Default">
   <MonoDevelop.Ide.ItemProperties.webApi PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="webApi/Models/videoUpload.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="webApi/wwwroot/components/Video/Video.js">
     <Files>
-      <File FileName="webApi/wwwroot/components/Video/Video.js" Line="7" Column="22" />
-      <File FileName="webApi/Models/videoUpload.cs" Line="21" Column="10" />
-      <File FileName="webApi/Controllers/videoUploadController.cs" Line="26" Column="1" />
+      <File FileName="webApi/wwwroot/components/Video/Video.js" Line="42" Column="10" />
+      <File FileName="webApi/Models/videoUpload.cs" Line="9" Column="45" />
+      <File FileName="webApi/Controllers/videoUploadController.cs" Line="9" Column="29" />
+      <File FileName="webApi/Models/studentInfo.cs" Line="106" Column="1" />
+      <File FileName="webApi/wwwroot/Home.html" Line="13" Column="81" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,17 +14,19 @@
           <Node name="webApi" expanded="True">
             <Node name="webApi" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="videoUpload.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="components" expanded="True">
                   <Node name="Home" expanded="True" />
                   <Node name="Sidebar" expanded="True" />
                   <Node name="StudentInfo" expanded="True" />
+                  <Node name="Video" expanded="True">
+                    <Node name="Video.js" selected="True" />
+                  </Node>
+                </Node>
+                <Node name="Files" expanded="True">
                   <Node name="Video" expanded="True" />
                 </Node>
-                <Node name="Files" expanded="True" />
               </Node>
             </Node>
           </Node>
